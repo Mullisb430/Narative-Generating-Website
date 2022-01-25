@@ -160,7 +160,7 @@ function scemsNarative()
 
             
     }
-    document.getElementById("narative").textContent = workingNarative;
+    document.getElementById("narativeText").textContent = workingNarative;
 }
 
 function doctorGenerate()
@@ -327,7 +327,7 @@ function doctorGenerate()
                 break;
     
     }
-    document.getElementById("narative").textContent = workingNarative;
+    document.getElementById("narativeText").textContent = workingNarative;
 }
 
 
@@ -378,7 +378,7 @@ function customPatientGenerate()
             workingNarative = workingNarative.replaceAll("&&", addressOfPlace)
             break
     }
-    document.getElementById("narative").textContent = workingNarative;
+    document.getElementById("narativeText").textContent = workingNarative;
 }
 
 
