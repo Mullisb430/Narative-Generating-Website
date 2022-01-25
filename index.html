@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="narative.js" ></script>
+</head>
+<body>
+
+<header>
+    <div id="scems">
+        <h1 class="title">Regular Dialysis Trip</h1>
+        <form>
+            <div class="groupBox">
+                <label>A trip or B trip?</label>
+                <select id="scemsSelectionOne">
+                    <option>A Trip</option>
+                    <option>B Trip</option>
+                </select>
+            </div>
+            <div class="groupBox">
+                <label>Which Patient?</label>
+                <select id="scemsSelectionTwo">
+                    <option>GS</option>
+                    <option>DP</option>
+                    <option>SD</option>
+                    <option>MT</option>
+                    <option>AR</option>
+                    <option>MP</option>
+                    <option>CS</option>
+                    <option>CH</option>
+                    <option>CM</option>
+                    <option>DA</option>
+                    <option>RM</option>
+                    <option>SS</option>
+                </select>
+            </div>
+            <div class="groupBox">
+                <input type="button" value="Generate" onclick="scemsNarative()">
+            </div>
+        </form>
+    </div>
+
+    <div id="doctorsAppointments">
+        <h1 class="title">Doctor's Appointment Trip</h1>
+        <form>
+            <div class="groupBox">
+                <label>What kind of trip?</label>
+                <select id="doctorSelectionOne">
+                    <option>A trip from home to doctor</option>
+                    <option>A trip from dialysis to doctor</option>
+                    <option>B trip from doctor to dialysis</option>
+                    <option>B trip from doctor to home</option>
+                </select>
+            </div>
+            <div class="groupBox">
+                <label>What is the name of the doctor's office?</label>
+                <input type="text" id="doctorSelectionTwo">
+            </div>
+            <div class="groupBox">
+                <label>What is the address for the doctor's office?</label>
+                <input type="text" id="doctorSelectionThree">
+            </div>
+            <div class="groupBox">
+                <label>Which Patient?</label>
+                <select id="doctorSelectionFour">
+                    <option>GS</option>
+                    <option>DP</option>
+                    <option>SD</option>
+                    <option>MT</option>
+                    <option>AR</option>
+                    <option>MP</option>
+                    <option>CS</option>
+                    <option>CH</option>
+                    <option>CM</option>
+                    <option>DA</option>
+                    <option>RM</option>
+                </select>
+            </div>
+            <div class="groupBox">
+                <input type="button" value="Generate" onclick="doctorGenerate()">
+            </div>
+        </form>
+    </div>
+
+    <div id="customPatients">
+        <h1 class="title">Custom Patient Trip</h1>
+        <form>
+            <div class="groupBox">
+                <label>What is the patient's address?</label>
+                <input type="text" id="customPatientOne">
+            </div>
+            <div class="groupBox">
+                <label>What is the patient's birth month?</label>
+                <input type="number" min="1" max="12" id="customPatientTwo" onchange="birthMonth()">
+            </div>
+            <div class="groupBox">
+                <label>What is the patient's birth day?</label>
+                <input type="number" min="1" max="31" id="customPatientThree" onchange="birthDay()">
+            </div>
+            <div class="groupBox">
+                <label>What is the patient's birth year?</label>
+                <input type="number" min="1900" max="2010" id="customPatientFour" onchange="birthYear()">
+            </div>
+            <div class="groupBox">
+                <label>What is the patient's gender?</label>
+                <select id="customPatientFive">
+                    <option>male</option>
+                    <option>female</option>
+                </select>
+            </div>
+            <div class="groupBox">
+                <label>What is the name of where the patient is going?</label>
+                <input type="text" id="customPatientSix">
+            </div>
+            <div class="groupBox">
+                <label>What is the address of where the patient is going?</label>
+                <input type="text" id="customPatientSeven">
+            </div>
+            <div class="groupBox">
+                <label>Is this an A trip or B trip?</label>
+                <select id="customPatientEight">
+                    <option>A Trip</option>
+                    <option>B Trip</option>
+                </select>
+            </div>
+            <div class="groupBox">
+                <input type="button" value="Generate" onclick="customPatientGenerate()">
+            </div>
+        </form>
+    </div>
+
+</header>
+
+<main>
+    <div id="narative">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis eu elit at hendrerit. Maecenas tempus, odio in semper varius, lorem lectus sagittis ante, ut tristique metus mauris vel elit. Integer vitae tristique dui, tincidunt varius ipsum. Duis consectetur ante et enim tincidunt, a varius tortor mollis. Integer risus urna, rutrum sed vehicula ut, fermentum ac dui. Suspendisse feugiat vel magna ac sollicitudin. Nunc ac metus lorem. Mauris neque augue, eleifend eget consectetur sed, malesuada vel velit. Donec porta tristique ex vitae gravida. Aliquam maximus vestibulum ipsum, quis ultricies felis vehicula eget. Suspendisse sagittis vitae felis sit amet imperdiet.
+
+            In enim purus, dignissim rhoncus accumsan at, ultrices vel metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer sit amet neque faucibus, iaculis neque at, laoreet augue. Duis ac nunc vitae leo faucibus semper. Nunc elit ipsum, euismod in dictum et, malesuada in lacus. Donec blandit sodales ligula, quis eleifend nisi pretium eu. Etiam lacinia iaculis lorem, dictum dictum turpis rhoncus sed. Sed augue massa, feugiat id accumsan sit amet, consequat vitae purus. Suspendisse nec dui porta, auctor nulla nec, semper magna. Aenean at suscipit nisl. Pellentesque ac lectus quis sapien commodo faucibus molestie vitae orci. Fusce volutpat dignissim molestie.
+            
+            Aenean porttitor ornare egestas. Sed est nisl, accumsan a sem vel, tempor condimentum nisl. Maecenas commodo quis libero et ultricies. Morbi vel purus malesuada, sagittis purus non, finibus libero. Aliquam sit amet justo et dui congue vehicula auctor sed nulla. Suspendisse eu leo justo. Aenean ultrices elit et faucibus bibendum.
+            
+            Aenean vel imperdiet mauris. In facilisis enim ante, pellentesque sodales odio tempus ac. Etiam molestie luctus eleifend. Quisque placerat ac sem eu scelerisque. Ut tincidunt lacinia nunc eget ultrices. Suspendisse non iaculis nisi. Nulla facilisi. Ut tincidunt enim erat, vel condimentum libero tincidunt eget.
+            
+            Curabitur interdum magna diam, ut pulvinar nulla dapibus sit amet. Nunc vitae ligula finibus, vulputate est id, dapibus odio. Phasellus quam ipsum, tempor eget tincidunt a, mollis at massa. Curabitur et malesuada nibh, at bibendum tortor. Vestibulum ultrices, turpis eget hendrerit volutpat, purus lorem auctor lorem, ac tempor metus quam sit amet felis. Duis venenatis urna sem, vitae blandit enim accumsan nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas et magna libero. Maecenas vitae augue a mi aliquam iaculis auctor id tellus. Donec aliquam tincidunt volutpat. Aliquam congue orci vitae arcu vestibulum, vel pretium ante pharetra. Ut consequat viverra purus at efficitur. Nullam nec purus non risus fringilla commodo. In hac habitasse platea dictumst. Nulla tristique eget metus in ultricies.
+        </p>
+    </div>
+</main>
+
+    
+</body>
+</html>

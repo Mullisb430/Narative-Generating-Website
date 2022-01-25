@@ -1,0 +1,86 @@
+body {
+    font-family: 'Avenir', 'sans-serif';
+    background-color: #2a301c;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    margin-top: 30px;
+}
+
+header div {
+    margin: auto;
+}
+
+.groupBox {
+    padding: 10px;
+}
+
+#narative {
+    border-radius: 12px;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background-color: beige;
+    padding: 25px;
+}
+
+#narative p {
+    margin: auto;
+    font-size: 13px;
+    height: auto;
+    width: auto;
+}
+
+#scems, #doctorsAppointments, #customPatients {
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+#scems {
+    background-color: #a841416c;
+}
+
+#doctorsAppointments {
+    background: #6b6666;
+}
+
+#customPatients {
+    background-color: #4760a5 ;
+}
+
+.title {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media only screen and (max-width: 600px) {
+        
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #narative {
+        border-radius: 12px;
+        margin: auto;
+        width: 450px;
+        height: fit-content;
+        background-color: beige;
+        padding: none;
+    }
+
+    #narative p {
+        font-size: 13px;
+        height: auto;
+        width: 450px;
+    }
+}
+
