@@ -25,15 +25,17 @@ header div {
     margin: auto;
     width: 600px;
     height: 600px;
-    background-color: beige;
-    padding: 25px;
+    background-color: #8db6c9;
+    padding: 50px;
 }
 
 #narative p {
-    margin: auto;
-    font-size: 13px;
+    padding: 10px;
+    font-size: 11px;
     height: auto;
     width: auto;
+    background-color: #9b9b9b;
+    color: #000000;
 }
 
 #scems, #doctorsAppointments, #customPatients {
@@ -61,6 +63,30 @@ header div {
 
 }
 
+#instructions {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    background-color: #bbb95a;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+#instructions p {
+    font-size: 13px;
+}
+
+.button {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    background-color: #e0e0e0;
+}
+
 @media only screen and (max-width: 600px) {
         
     header {
@@ -73,12 +99,12 @@ header div {
         margin: auto;
         width: 450px;
         height: fit-content;
-        background-color: beige;
+        background-color: #8db6c9;
         padding: none;
     }
 
     #narative p {
-        font-size: 13px;
+        font-size: 11px;
         height: auto;
         width: 450px;
     }
