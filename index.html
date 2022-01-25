@@ -9,6 +9,13 @@
 </head>
 <body>
 
+    <aside id="instructions">
+        <h1>HOW TO:</h1>
+        <p>
+            Just fill out one of the form sections, press GENERATE, and your narative will appear in the section titled "Narative:" below. All form sections generate naratives that are placed in the same area.
+        </p>
+    </aside>
+
 <header>
     <div id="scems">
         <h1 class="title">Regular Dialysis Trip</h1>
@@ -38,7 +45,7 @@
                 </select>
             </div>
             <div class="groupBox">
-                <input type="button" value="Generate" onclick="scemsNarative()">
+                <input type="button" value="Generate" onclick="scemsNarative()" class="button">
             </div>
         </form>
     </div>
@@ -80,7 +87,7 @@
                 </select>
             </div>
             <div class="groupBox">
-                <input type="button" value="Generate" onclick="doctorGenerate()">
+                <input type="button" value="Generate" onclick="doctorGenerate()" class="button">
             </div>
         </form>
     </div>
@@ -127,7 +134,7 @@
                 </select>
             </div>
             <div class="groupBox">
-                <input type="button" value="Generate" onclick="customPatientGenerate()">
+                <input type="button" value="Generate" onclick="customPatientGenerate()" class="button">
             </div>
         </form>
     </div>
@@ -136,7 +143,8 @@
 
 <main>
     <div id="narative">
-        <p>
+        <h1 class="title">Narative:</h1>
+        <p id="narativeText">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis eu elit at hendrerit. Maecenas tempus, odio in semper varius, lorem lectus sagittis ante, ut tristique metus mauris vel elit. Integer vitae tristique dui, tincidunt varius ipsum. Duis consectetur ante et enim tincidunt, a varius tortor mollis. Integer risus urna, rutrum sed vehicula ut, fermentum ac dui. Suspendisse feugiat vel magna ac sollicitudin. Nunc ac metus lorem. Mauris neque augue, eleifend eget consectetur sed, malesuada vel velit. Donec porta tristique ex vitae gravida. Aliquam maximus vestibulum ipsum, quis ultricies felis vehicula eget. Suspendisse sagittis vitae felis sit amet imperdiet.
 
             In enim purus, dignissim rhoncus accumsan at, ultrices vel metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer sit amet neque faucibus, iaculis neque at, laoreet augue. Duis ac nunc vitae leo faucibus semper. Nunc elit ipsum, euismod in dictum et, malesuada in lacus. Donec blandit sodales ligula, quis eleifend nisi pretium eu. Etiam lacinia iaculis lorem, dictum dictum turpis rhoncus sed. Sed augue massa, feugiat id accumsan sit amet, consequat vitae purus. Suspendisse nec dui porta, auctor nulla nec, semper magna. Aenean at suscipit nisl. Pellentesque ac lectus quis sapien commodo faucibus molestie vitae orci. Fusce volutpat dignissim molestie.
