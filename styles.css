@@ -8,6 +8,20 @@ header {
     flex-direction: row;
 }
 
+#topContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#companyBox {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    background-color: #492d4e;
+}
+
 main {
     margin-top: 30px;
 }
