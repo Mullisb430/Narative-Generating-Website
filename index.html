@@ -9,11 +9,21 @@
 </head>
 <body>
 
-    <aside id="instructions">
-        <h1>HOW TO:</h1>
-        <p>
-            Just fill out one of the form sections, press GENERATE, and your narative will appear in the section titled "Narative:" below. All form sections generate naratives that are placed in the same area.
-        </p>
+    <aside id="topContainer">
+        <div id="instructions" class="groupBox">
+            <h1>HOW TO:</h1>
+            <p>
+                Just fill out one of the form sections, press GENERATE, and your narative will appear in the section titled "Narative:" below. All form sections generate naratives that are placed in the same area.
+            </p>
+        </div>
+
+        <div class="groupBox" id="companyBox">
+            <label>Which Company?</label>
+            <select id="companySelection" onchange="switchCompanies()">
+                <option>SCEMS</option>
+                <option>VitalLink</option>
+            </select>
+        </div>
     </aside>
 
 <header>
@@ -45,7 +55,7 @@
                 </select>
             </div>
             <div class="groupBox">
-                <input type="button" value="Generate" onclick="scemsNarative()" class="button">
+                <input type="button" value="Generate" onclick="generateNarative()" class="button">
             </div>
         </form>
     </div>
@@ -87,7 +97,7 @@
                 </select>
             </div>
             <div class="groupBox">
-                <input type="button" value="Generate" onclick="doctorGenerate()" class="button">
+                <input type="button" value="Generate" onclick="generateNarative()" class="button">
             </div>
         </form>
     </div>
