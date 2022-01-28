@@ -31,7 +31,7 @@ var bTripDocToDia = "++ was dispatched to ** (^^) for routine transport of an ES
 
 var SCEMSPATIENTS = ["GS", "DP", "SD", "MT", "AR", "MP", "CS", "CH", "CM", "DA", "RM"]
 
-var VITALLINKPATIENTS = ["LA", "DA", "FC", "DGr", "LG", "CH", "FH", "AL", "RM", "JO", "CS", "ETh", "DT", "ETr", "LW", "VA", "GB", "MB", "DGo", "AL", "CM", "PP", "ER", "SS", "GS", "TW" ]
+var VITALLINKPATIENTS = ["LA", "DA", "FC", "DGr", "LG", "CH", "FH", "ALa", "RM", "JO", "CS", "ETh", "DT", "ETr", "LW", "VA", "GB", "MB", "DGo", "ALo", "CM", "PP", "ER", "SS", "GS", "TW" ]
 
 var companySel = "Southern Care EMS"
 
@@ -289,7 +289,7 @@ function generateNarative()
             workingNarative = workingNarative.replaceAll("^^", selectionDoctorThree)
             break;
             
-        case "AL":
+        case "ALa":
         
             
             workingNarative = workingNarative.replaceAll("##", "3223 Bunny Lane, Decatur, Georgia, 30034")
@@ -409,7 +409,7 @@ function generateNarative()
             workingNarative = workingNarative.replaceAll("^^", selectionDoctorThree)
             break;
             
-        case "AL":
+        case "ALo":
         
             
             workingNarative = workingNarative.replaceAll("##", "13105 Turnberry Place, Lithonia, Georgia, 30038")
