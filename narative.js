@@ -144,6 +144,18 @@ function generateNarative()
             workingNarative = workingNarative.replaceAll("**", selectionDoctorTwo)
             workingNarative = workingNarative.replaceAll("^^", selectionDoctorThree)
             break;
+
+        case "JL":
+
+            
+            workingNarative = workingNarative.replaceAll("##", "1106 Green Street, Warner Robins, Georgia, 31093")
+            workingNarative = workingNarative.replaceAll("@@", getAge(new Date(1957, 4, 12)))
+            workingNarative = workingNarative.replaceAll("$$", "male")
+            workingNarative = workingNarative.replaceAll("%%", "DaVita Dialysis of Warner Robins")
+            workingNarative = workingNarative.replaceAll("&&", "509 North Houston Road, Warner Robins, Georgia, 31093")
+            workingNarative = workingNarative.replaceAll("**", selectionDoctorTwo)
+            workingNarative = workingNarative.replaceAll("^^", selectionDoctorThree)
+            break;
             
         case "SS":
         
