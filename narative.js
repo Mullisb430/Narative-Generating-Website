@@ -45,10 +45,12 @@ function generateNarative()
     var selectionDoctorOne = document.getElementById("doctorSelectionOne").value
     var selectionDoctorTwo = document.getElementById("doctorSelectionTwo").value
     var selectionDoctorThree = document.getElementById("doctorSelectionThree").value
+    var selectionDoctorFour = document.getElementById("doctorSelectionFour").value
     var workingNarative = ""
 
     if (selectionDoctorThree.length > 3)
     {
+        selectionDialysisTwo = selectionDoctorFour;
         switch (selectionDoctorOne)
         {
 
