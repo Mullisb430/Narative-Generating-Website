@@ -52,7 +52,7 @@ generateNarative(2);
 
 
 
-function generateNarative(appoinment)
+function generateNarative(appointment)
 {
     var selectionDialysisOne = document.getElementById("scemsSelectionOne").value 
     var selectionDoctorOne = document.getElementById("doctorSelectionOne").value
