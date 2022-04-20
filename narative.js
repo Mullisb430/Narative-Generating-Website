@@ -40,19 +40,19 @@ var appointmentType = ""
 function dialysisAppointment()
 {
 appointmentType = document.getElementById("scemsSelectionTwo").value
-generateNarative();
+generateNarative(1);
 }
 
 function doctorAppointment()
 {
 appointmentType = document.getElementById("doctorSelectionFour").value
-generateNarative();
+generateNarative(2);
 }
 
 
 
 
-function generateNarative()
+function generateNarative(appoinment)
 {
     var selectionDialysisOne = document.getElementById("scemsSelectionOne").value 
     var selectionDoctorOne = document.getElementById("doctorSelectionOne").value
@@ -60,7 +60,7 @@ function generateNarative()
     var selectionDoctorThree = document.getElementById("doctorSelectionThree").value
     var workingNarative = ""
 
-    if (selectionDoctorThree.length > 3)
+    if (appointment === 1)
     {
         switch (selectionDoctorOne)
         {
