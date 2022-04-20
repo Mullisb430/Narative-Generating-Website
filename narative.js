@@ -35,22 +35,31 @@ var VITALLINKPATIENTS = ["LA", "DA", "FC", "DGr", "LG", "CH", "FH", "ALa", "RM",
 
 var companySel = "Southern Care EMS"
 
+var appointmentType = ""
+
+function dialysisAppointment()
+{
+appointmentType = document.getElementById("scemsSelectionTwo").value
+}
+
+function doctorAppointment()
+{
+appointmentType = document.getElementById("doctorSelectionFour").value
+}
+
 
 
 
 function generateNarative()
 {
     var selectionDialysisOne = document.getElementById("scemsSelectionOne").value 
-    var selectionDialysisTwo = document.getElementById("scemsSelectionTwo").value  
     var selectionDoctorOne = document.getElementById("doctorSelectionOne").value
     var selectionDoctorTwo = document.getElementById("doctorSelectionTwo").value
     var selectionDoctorThree = document.getElementById("doctorSelectionThree").value
-    var selectionDoctorFour = document.getElementById("doctorSelectionFour").value
     var workingNarative = ""
 
     if (selectionDoctorThree.length > 3)
     {
-        selectionDialysisTwo = selectionDoctorFour;
         switch (selectionDoctorOne)
         {
 
@@ -85,7 +94,7 @@ function generateNarative()
         }
     }
 
-    switch (selectionDialysisTwo)
+    switch (appointmentType)
     {
         case "GS":
 
