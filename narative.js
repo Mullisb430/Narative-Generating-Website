@@ -40,11 +40,13 @@ var appointmentType = ""
 function dialysisAppointment()
 {
 appointmentType = document.getElementById("scemsSelectionTwo").value
+generateNarative();
 }
 
 function doctorAppointment()
 {
 appointmentType = document.getElementById("doctorSelectionFour").value
+generateNarative();
 }
 
 
