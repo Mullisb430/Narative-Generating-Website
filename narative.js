@@ -60,7 +60,7 @@ function generateNarative(appoinment)
     var selectionDoctorThree = document.getElementById("doctorSelectionThree").value
     var workingNarative = ""
 
-    if (appointment === 1)
+    if (appointment === 2)
     {
         switch (selectionDoctorOne)
         {
