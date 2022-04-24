@@ -35,7 +35,23 @@ var VITALLINKPATIENTS = ["LA", "DA", "FC", "DGr", "LG", "CH", "FH", "ALa", "RM",
 
 var companySel = "Southern Care EMS"
 
+var officeName = ""
+
 var appointmentType = ""
+
+var doctorsOfficeData = {
+    "Midtown Vascular" : "1445 Georgia Avenue, Macon, Georgia, 31201",
+    "The Woundcare Center" : "818 Forsyth Street, Macon, Georgia, 31201",
+    "Piedmont Orthopiedic Complex" : "4660 Riverside Drive, Macon, Georgia, 31210",
+    "Dr Luu Infusion Center" : "458 Hemlock Street Suite #202, Macon, Georgia, 31201",
+    "Kidney Center of Central GA" : "657 Hemlock Street, Macon, Georgia, 31201",
+    "Cardiac Consultants of Central Georgia" : "427 Poplar Street, Macon, Georgia, 31201",
+    "Atrium Heart & Vascular Care" : "575 First Street, Macon, Georgia, 31201",
+    "Central Georgia Vascular Solutions" : "688 Walnut Street, Macon, Georgia, 31201",
+    "Atrium Surgery Center" : "840 Pine Street Suite #750, Macon, Georgia, 31201",
+    "Vineville Internal Medicine" : "3448 Vineville Avenue, Macon, Georgia, 31204",
+    "Atrium Health Medical Center" : "777 Hemlock Street, Macon, Georgia, 31201"
+};
 
 function dialysisAppointment()
 {
@@ -800,4 +816,55 @@ function propagateVitalLink()
     
 
     
+}
+
+
+function fillInDocAddress()
+{
+    officeAddress = document.getElementById("doctorSelectionThree");
+    officeName = document.getElementById("doctorSelectionTwo").value
+    console.log(officeName)
+    
+
+    switch(officeName)
+    {
+        case "Midtown Vascular" :
+            console.log(officeName)
+            officeAddress.value = doctorsOfficeData["Midtown Vascular"]
+            break;
+
+        case "The Woundcare Center" :
+            console.log(officeName)
+            officeAddress.value = doctorsOfficeData["The Woundcare Center"]
+            break;
+
+        case "Central Georgia Infectious Disease Center" :
+            console.log(officeName)
+            officeAddress.value = doctorsOfficeData["Central Georgia Infectious Disease Center"]
+            break;
+
+        case "Piedmont Orthopiedic Complex" :
+            console.log(officeName)
+            officeAddress.value = doctorsOfficeData["Piedmont Orthopiedic Complex"]
+            break;
+
+    }
+}
+
+window.addEventListener("load", addSelectOptions);
+
+function addSelectOptions()
+{
+    var datalist = document.getElementById("officeList")
+    options = ""
+    var officeList = Object.keys(doctorsOfficeData)
+
+    for(var i = 0; i < officeList.length; ++i)
+    {
+        console.log("1")
+        options += '<option value="' + officeList[i] + '" />';
+    }
+
+    datalist.innerHTML = options
+
 }
