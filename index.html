@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="narative.js" ></script>
 </head>
 <body>
 
@@ -62,7 +61,7 @@
 
     <div id="doctorsAppointments">
         <h1 class="title">Doctor's Appointment Trip</h1>
-        <form>
+        <form autocomplete="off">
             <div class="groupBox">
                 <label>What kind of trip?</label>
                 <select id="doctorSelectionOne">
@@ -74,7 +73,9 @@
             </div>
             <div class="groupBox">
                 <label>What is the name of the doctor's office?</label>
-                <input type="text" id="doctorSelectionTwo">
+                <input type="text" id="doctorSelectionTwo" name="doctorsOfficeName" placeholder="Doctor's Office..." list="officeList" onchange="fillInDocAddress()" onselect="fillInDocAddress()">
+                <datalist id="officeList" onclick="fillInDocAddress()">
+                </datalist>
             </div>
             <div class="groupBox">
                 <label>What is the address for the doctor's office?</label>
@@ -155,18 +156,22 @@
     <div id="narative">
         <h1 class="title">Narative:</h1>
         <p id="narativeText">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis eu elit at hendrerit. Maecenas tempus, odio in semper varius, lorem lectus sagittis ante, ut tristique metus mauris vel elit. Integer vitae tristique dui, tincidunt varius ipsum. Duis consectetur ante et enim tincidunt, a varius tortor mollis. Integer risus urna, rutrum sed vehicula ut, fermentum ac dui. Suspendisse feugiat vel magna ac sollicitudin. Nunc ac metus lorem. Mauris neque augue, eleifend eget consectetur sed, malesuada vel velit. Donec porta tristique ex vitae gravida. Aliquam maximus vestibulum ipsum, quis ultricies felis vehicula eget. Suspendisse sagittis vitae felis sit amet imperdiet.
+            THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. 
 
-            In enim purus, dignissim rhoncus accumsan at, ultrices vel metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer sit amet neque faucibus, iaculis neque at, laoreet augue. Duis ac nunc vitae leo faucibus semper. Nunc elit ipsum, euismod in dictum et, malesuada in lacus. Donec blandit sodales ligula, quis eleifend nisi pretium eu. Etiam lacinia iaculis lorem, dictum dictum turpis rhoncus sed. Sed augue massa, feugiat id accumsan sit amet, consequat vitae purus. Suspendisse nec dui porta, auctor nulla nec, semper magna. Aenean at suscipit nisl. Pellentesque ac lectus quis sapien commodo faucibus molestie vitae orci. Fusce volutpat dignissim molestie.
-            
-            Aenean porttitor ornare egestas. Sed est nisl, accumsan a sem vel, tempor condimentum nisl. Maecenas commodo quis libero et ultricies. Morbi vel purus malesuada, sagittis purus non, finibus libero. Aliquam sit amet justo et dui congue vehicula auctor sed nulla. Suspendisse eu leo justo. Aenean ultrices elit et faucibus bibendum.
-            
-            Aenean vel imperdiet mauris. In facilisis enim ante, pellentesque sodales odio tempus ac. Etiam molestie luctus eleifend. Quisque placerat ac sem eu scelerisque. Ut tincidunt lacinia nunc eget ultrices. Suspendisse non iaculis nisi. Nulla facilisi. Ut tincidunt enim erat, vel condimentum libero tincidunt eget.
-            
-            Curabitur interdum magna diam, ut pulvinar nulla dapibus sit amet. Nunc vitae ligula finibus, vulputate est id, dapibus odio. Phasellus quam ipsum, tempor eget tincidunt a, mollis at massa. Curabitur et malesuada nibh, at bibendum tortor. Vestibulum ultrices, turpis eget hendrerit volutpat, purus lorem auctor lorem, ac tempor metus quam sit amet felis. Duis venenatis urna sem, vitae blandit enim accumsan nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas et magna libero. Maecenas vitae augue a mi aliquam iaculis auctor id tellus. Donec aliquam tincidunt volutpat. Aliquam congue orci vitae arcu vestibulum, vel pretium ante pharetra. Ut consequat viverra purus at efficitur. Nullam nec purus non risus fringilla commodo. In hac habitasse platea dictumst. Nulla tristique eget metus in ultricies.
+
+            THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. 
+
+
+            THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. 
+
+
+            THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. THIS IS WHERE THE NARATIVE WILL BE PLACED. 
         </p>
     </div>
 </main>
+
+<script src="narative.js">
+</script>
 
     
 </body>
