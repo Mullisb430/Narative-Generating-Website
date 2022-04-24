@@ -101,6 +101,11 @@ header div {
     background-color: #e0e0e0;
 }
 
+#doctorSelectionTwo {
+    position: relative;  
+    display: inline-block;  
+}
+
 @media only screen and (max-width: 600px) {
         
     header {
@@ -123,4 +128,6 @@ header div {
         width: 450px;
     }
 }
+
+
 
