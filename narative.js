@@ -824,29 +824,14 @@ function fillInDocAddress()
     officeAddress = document.getElementById("doctorSelectionThree");
     officeName = document.getElementById("doctorSelectionTwo").value
     console.log(officeName)
-    
-
-    switch(officeName)
+    var officeList = Object.keys(doctorsOfficeData)
+    for(var i = 0; i < officeList.length; ++i)
     {
-        case "Midtown Vascular" :
-            console.log(officeName)
-            officeAddress.value = doctorsOfficeData["Midtown Vascular"]
-            break;
+        if(officeName == officeList[i])
+        {
+            officeAddress.value = doctorsOfficeData[officeName]
+        }
 
-        case "The Woundcare Center" :
-            console.log(officeName)
-            officeAddress.value = doctorsOfficeData["The Woundcare Center"]
-            break;
-
-        case "Central Georgia Infectious Disease Center" :
-            console.log(officeName)
-            officeAddress.value = doctorsOfficeData["Central Georgia Infectious Disease Center"]
-            break;
-
-        case "Piedmont Orthopiedic Complex" :
-            console.log(officeName)
-            officeAddress.value = doctorsOfficeData["Piedmont Orthopiedic Complex"]
-            break;
 
     }
 }
