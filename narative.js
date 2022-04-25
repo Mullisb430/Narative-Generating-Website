@@ -736,21 +736,22 @@ function getAge(birthDate)
 
     var dateDifference = currentDate.getFullYear() - birthDate.getFullYear();
 
-    if (birthDate.getMonth > currentMonth)
+
+    if (birthDate.getMonth() < currentMonth)
     {
         return dateDifference;
-    } else if (birthDate.getMonth() === currentMonth)
+    } else if (birthDate.getMonth() == currentMonth)
     {
         if(birthDate.getDate() >= currentDayOfMonth)
         { 
             return dateDifference;
         } else
         {
-            return --dateDifference;
+            return dateDifference - 1;
         }
     } else 
     {
-        return --dateDifference;
+        return dateDifference - 1;
     }
 
 }
