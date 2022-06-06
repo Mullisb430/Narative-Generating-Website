@@ -186,7 +186,7 @@ function generateNarative(appointment)
             workingNarative = workingNarative.replaceAll("^^", selectionDoctorThree)
             break;
 
-        case "JL":
+        case "RV":
 
             
             workingNarative = workingNarative.replaceAll("##", "732 Covington Street, Jackson, Georgia, 30233")
@@ -718,6 +718,7 @@ function customPatientGenerate()
             workingNarative = workingNarative.replaceAll("&&", addressOfPlace)
             break
     }
+    workingNarative = workingNarative.replaceAll("++", companySel);
     document.getElementById("narativeText").textContent = workingNarative;
 }
 
