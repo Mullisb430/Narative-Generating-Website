@@ -189,7 +189,7 @@ function generateNarative(appointment)
         case "RV":
 
             
-            workingNarative = workingNarative.replaceAll("##", "732 Covington Street, Jackson, Georgia, 30233")
+            workingNarative = workingNarative.replaceAll("##", "195 Yatesville Road, Barnesville, Georgia, 30204")
             workingNarative = workingNarative.replaceAll("@@", getAge(new Date(1960, 2, 22)))
             workingNarative = workingNarative.replaceAll("$$", "male")
             workingNarative = workingNarative.replaceAll("%%", "DaVita Iris City Dialysis")
