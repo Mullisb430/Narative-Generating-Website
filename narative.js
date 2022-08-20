@@ -29,9 +29,9 @@ var aTripDiaToDoc = "++ was dispatched to %% (&&) for routine transport of an ES
 
 var bTripDocToDia = "++ was dispatched to ** (^^) for routine transport of an ESRD Pt, post doctors appointment to dialysis treatment.  Unit 08504 arrived on the scene to find a @@ Y/O $$ complaining of general weakness and Pt. has an unsteady gait.  Pt. has medical HX of: ESRD, general weakness.  Pt is a fall risk and requires stretcher transport. See vital signs section for specific vital findings.  No other complaints at this time.  Pt vitals were monitored throughout transport.  Pt has ESRD and is in need of hemodialysis Tx. Pt was assessed for signs of shock and trauma and lifted onto the stretcher via 2 medic extremity lift/draw sheet. The straps (5) were secured, rails raised and the stretcher was rolled to the ambulance and loaded.  Transport was non-emergency and Pt. remained stable. Vitals were taken (see vitals section of report for specific findings) and the Pt was monitored throughout transport. On arrival to the %% (&&), the stretcher was removed with the straps secured and the rails up. Pt was moved into %% without incident.  Pt care was transferred nurse/tech."
 
-var SCEMSPATIENTS = ["GS", "DP", "SD", "MT", "AR", "JL", "CS", "CH", "CM", "DA", "RM", "RV"]
+var SCEMSPATIENTS = ["GS", "DP", "SD", "MT", "AR", "JL", "CS", "CH", "CM", "DA", "RM", "RV", "GH"]
 
-var VITALLINKPATIENTS = ["LA", "DA", "FC", "DGr", "LG", "CH", "FH", "ALa", "RM", "JO", "CS", "ETh", "DT", "ETr", "LW", "VA", "GB", "MB", "DGo", "ALo", "CM", "PP", "ER", "SS", "GS", "TW" ]
+var VITALLINKPATIENTS = ["LA", "DA", "FC", "DGr", "LG", "CH", "FH", "ALa", "RM", "JO", "CS", "ETh", "DT", "ETr", "LW", "VA", "GB", "MB", "DGo", "ALo", "CM", "PP", "ER", "SS", "GS", "TW", "RV" ]
 
 var companySel = "Southern Care EMS"
 
